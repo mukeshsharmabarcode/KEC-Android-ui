@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+          *{ padding: 0; margin:0; box-sizing: border-box; }
+        header{background-color: #0b1d66  !important; padding:10px;}
+       .button-collapse i {
+    color: #0b1d66;
+    line-height: 1;
+    font-size: 30px;
+}
+.head {
+    font-size: 23px;
+    margin: 0; color: #0b1d66;
+    
+    text-align: center;
+    line-height: 2;
+}
+.row{ margin: 0; }
+ul:not(.browser-default) li {
+    list-style-type: none;
+    border-bottom: 1px solid #ccc;
+}
+ul li:first-child {
+    margin: auto;
+    display: flex;
+    width: 100%;
+    padding: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li:first-child img{
+      height: 70px;
+      width: auto;
+}
+ul li h2 {
+    font-size: 29px;
+    text-align: center;
+}
+.side-nav {
+    position: sticky;
+    width: 300px;
+   }
+   .btn_log{float: right;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #0b1d66;
+    font-size: 25px;
+    align-items: center;
+    height: 40px;
+  }
+  header {
+    background-color: #fff  !important;
+    padding: 10px;
+    box-shadow: 1px 1px 14px 2px #999;
+}
+.box {
+    /* border: 2px solid; */
+    text-align: center;
+    box-shadow: -1px 7px 7px 0px #999;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #d1d7ef;
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.box .text{ margin-bottom: 1rem; color: #0b1d66;}
+.box .icon{}
+.box .icon i {
+    color: #0b1d66;
+    font-size: 4rem;
+    line-height: 6rem;
+}
+.box:hover{ background-color: #0b1d66; color: #fff;}
+.box:hover .icon i{ color: #fff;}
+.box:hover .text{  color: #fff;}
+      </style>
+  </head>
+ <body bgcolor="#111"> 
+
+ <div class="container-fluid" style="width:100%; display: flex; justify-content: center; align-items: center;">
+  <div style="width:400px; background: #fff; height: 100vh; position: relative; overflow: hidden;">
+  <header >
+       <div class="row">
+              <div class="col s3">
+                   <a href="#" data-activates="slide-out" class="button-collapse">
+                    <!-- <i class="fa fa-bars" aria-hidden="true"></i>-->
+                    <img src="logo-lg.png">
+                    </a> 
+              </div>
+              <div class="col s6">
+                    <h1 class="head">Dashboard</h1>
+              </div>
+              <div class="col s3">
+                              <a href="index.html"  class="btn_log"  >
+                                <i class="fa fa-power-off" aria-hidden="true"></i></a>
+              </div>
+      </div>
+   
+</header>
+<div style="    width: 400px;
+position: fixed;
+background: #000;
+color: #fff;
+bottom: 0;
+left: 34.9%;
+padding: 4px; font-size: 1.5rem;"  onclick="window.location.href='dashboard.html'">
+<i class="fas fa-chevron-circle-left"></i></div>
+<div class="container-fluid" style="min-height: 100vh;
+overflow: scroll;
+height: 100%; padding: 3rem 0;">
+  <section style="margin-top: 20px;">
+    <div class="row">
+     <div class="col s6">
+       <a href="form.html">
+       <div class="box">
+         <div class="icon"><i class="fa fa-qrcode" aria-hidden="true"></i></div>
+         <div class="text">Delivery Scanning</div>
+       </div>
+      </a>
+     </div>
+     <div class="col s6">
+        <a href="form.html">
+      <div class="box">
+        <div class="icon"><i class="fas fa-chart-area"></i></div>
+        <div class="text">Audit</div>
+      </div>
+      </a>
+    </div>
+    <div class="col s6">
+        <a href="form.html">
+      <div class="box">
+        <div class="icon"><i class="fas fa-dungeon"></i></div>
+        <div class="text">GateOut Entry</div>
+      </div>
+      </a>
+    </div>
+    
+  
+    </div>
+  </section>
+ 
+  </div>
+  <ul id="slide-out" class="side-nav">
+    <li><img src="logo.png"></li>
+    <li><h2>Menu</h2></li>
+    <li><a href="form.html"> <i class="fa fa-server" aria-hidden="true"></i>Master</a></li>
+    <li><a href="#!"><i class="fa fa-exchange" aria-hidden="true"></i>Transaction</a></li>
+    <li><a href="#!"><i class="fa fa-file" aria-hidden="true"></i>Reports </a></li>
+  
+    
+  </ul>
+</div>
+</div>
+<script>
+ $(".button-collapse").sideNav();
+</script>     
+ </body>
+  </html>
