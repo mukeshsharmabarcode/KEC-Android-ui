@@ -84,6 +84,19 @@ ul li h2 {
 .box:hover{ background-color: #0b1d66; color: #fff;}
 .box:hover .icon i{ color: #fff;}
 .box:hover .text{  color: #fff;}
+.back{width: 400px;
+position: fixed;
+background: #000;
+color: #fff;
+bottom: 0;
+left: 34.9%;
+padding: 4px; font-size: 1.5rem;}
+@media only screen and (max-width: 600px) {
+  .back{width: 402px;
+    left: 0%;
+  }
+  
+}
       </style>
   </head>
  <body bgcolor="#111"> 
@@ -108,13 +121,7 @@ ul li h2 {
       </div>
    
 </header>
-<div style="    width: 400px;
-position: fixed;
-background: #000;
-color: #fff;
-bottom: 0;
-left: 34.9%;
-padding: 4px; font-size: 1.5rem;" onclick="window.location.href='dashboard.html'">
+<div class="back" onclick="window.location.href='dashboard.html'">
 <i class="fas fa-chevron-circle-left"></i></div>
 <div class="container-fluid" style="min-height: 100vh;
 overflow: scroll;

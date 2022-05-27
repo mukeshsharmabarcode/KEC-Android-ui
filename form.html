@@ -115,6 +115,19 @@ a.btn-large{ display: block; background-color: #f15b26 !important;}
 .pagination li.active {
     background-color: #0b1d66 !important;
 }
+.back{width: 400px;
+position: fixed;
+background: #000;
+color: #fff;
+bottom: 0;
+left: 34.9%;
+padding: 4px; font-size: 1.5rem;}
+@media only screen and (max-width: 600px) {
+  .back{width: 402px;
+    left: 0%;
+  }
+  
+}
       </style>
    
   </head>
@@ -139,13 +152,7 @@ a.btn-large{ display: block; background-color: #f15b26 !important;}
                     
                     
 </header>
-<div style="    width: 400px;
-position: fixed;
-background: #000;
-color: #fff;
-bottom: 0;
-left: 34.9%;
-padding: 4px; font-size: 1.5rem;"  onclick="window.location.href='dashboard.html'">
+<div class="back" onclick="window.location.href='dashboard.html'">
 <i class="fas fa-chevron-circle-left"></i></div>
 
  <div class="container" style="margin-top: 15px; width:80%;">
